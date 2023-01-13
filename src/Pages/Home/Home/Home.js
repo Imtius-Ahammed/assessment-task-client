@@ -1,4 +1,5 @@
 import React from 'react';
+import AllImages from '../AllImages/AllImages';
 import ImageTable from '../ImageTable/ImageTable';
 
 const Home = () => {
@@ -6,6 +7,7 @@ const Home = () => {
     <div>
       <h1>This is home</h1>
       <ImageTable></ImageTable>
+      <AllImages></AllImages>
     </div>
   );
 };
