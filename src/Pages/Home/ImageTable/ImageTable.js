@@ -10,7 +10,7 @@ const ImageTable = () => {
   },[])
   return (
     <div>
-      <div className="overflow-x-auto w-full container mx-auto">
+      <div className="overflow-x-auto w-full border rounded-lg shadow-md">
   <table className="table w-full">
   
     <thead>

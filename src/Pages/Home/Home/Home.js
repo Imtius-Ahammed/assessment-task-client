@@ -4,9 +4,11 @@ import ImageTable from '../ImageTable/ImageTable';
 
 const Home = () => {
   return (
-    <div>
-      <h1>This is home</h1>
+    <div className='container mx-auto '>
+      <h1 className='text-center text-3xl py-8 font-medium'>This the Table Section for Important Images</h1>
+     
       <ImageTable></ImageTable>
+      
       <AllImages></AllImages>
     </div>
   );

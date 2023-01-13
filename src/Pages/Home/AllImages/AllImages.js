@@ -2,21 +2,13 @@ import React, { useEffect, useState } from 'react';
 import AllImagesCard from './AllImagesCard';
 import "./AllImages.css"
 
+
+
 const AllImages = () => {
   const [allData, setAllData] = useState([]);
-//   const [pageCount, setPageCount] = useState(0);
 
-//  const [causes, setCauses] = useState([])
-//     const [page, setPage] = useState(0);
-//     const [size, setSize] = useState(3);
-
-//     useEffect(() => {
-//       fetch(`https://mosque-management.onrender.com/campaigns?page=${page}&size=${size}`)
-//           .then(res => res.json())
-//           .then(data => setCauses(data));
-//   }, [page, size]);
 const [count,setCount] = useState(0);
-const [cart, setCart] = useState([]);
+
 const [page,setPage] = useState(0);
 const [size,setSize] = useState(10);
 
@@ -41,11 +33,14 @@ const pages = Math.ceil(count/size);
     .then(res=>res.json())
     .then(data=>setAllData(data))
   },[])
+
+
   return (
     <div >
-     <div className='grid grid-cols-1 lg:grid-cols-3 gap-5 py-7 w-full container mx-auto'>
+      <h1 className='text-center text-5xl font-medium my-10'>All Images Are Here</h1>
+     <div className='grid grid-cols-1 lg:grid-cols-3 gap-4 py-5 container mx-auto'>
      {
-        allData.map(images=><AllImagesCard key={images._id} images={images}></AllImagesCard>)
+        allData.map(images=><AllImagesCard  key={images._id} images={images}></AllImagesCard>)
       }
      </div>
       <div className="pagination">
