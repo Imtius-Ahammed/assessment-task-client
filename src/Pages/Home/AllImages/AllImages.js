@@ -85,8 +85,11 @@ const handleClearToClick = () => {
           <option value="20">20</option>
         </select>
       </div>
+      <h1 className="text-4xl text-center font-medium">Selected Images</h1>
+      <hr className="border-2" />
 
-      <div className="grid grid-cols-3 lg:grid-cols-10 gap-4 py-5 container mx-auto">
+      <div className="grid grid-cols-3 lg:grid-cols-10 gap-4 py-5 container mx-auto ">
+       
 
                 {
                     items.map(item =><ImgCart key={item.id} item={item}></ImgCart>
